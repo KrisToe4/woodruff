@@ -2,8 +2,8 @@
   <mat-card class="card rounded">
       <img mat-card-image src="../../assets/banner.jpg" alt="Banner" class="banner">
   </mat-card>
-  <mat-card class="card rounded">
-      <mat-toolbar class="rounded">
+  <mat-card class="card">
+      <mat-toolbar>
           <button mat-button>Home</button>
           <button mat-button>Classes</button>
           <button mat-button>Schedule</button>
@@ -15,22 +15,15 @@
   </mat-card>
 </div>
 <div class="grid-container">
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="4" rowHeight="400px" gutterSize="0">
     <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
         <mat-card class="card">
-            <mat-card-header>
-              <mat-card-title>
-                <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                  <mat-icon>more_vert</mat-icon>
-                </button>
-                <mat-menu #menu="matMenu" xPosition="before">
-                  <button mat-menu-item>Expand</button>
-                  <button mat-menu-item>Remove</button>
-                </mat-menu>
-              </mat-card-title>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-              <div>Card Content Here</div>
+            <mat-card-content class="card-content" [style.background]="card.background">
+              <div [ngSwitch]="card.title">
+                <app-bio *ngSwitchCase="'Bio'"></app-bio>
+                <app-class-list *ngSwitchCase="'ClassList'"></app-class-list>
+                <app-quote-of-the-day *ngSwitchCase="'QuoteOfTheDay'"></app-quote-of-the-day>
+              </div>
             </mat-card-content>
           </mat-card>
     </mat-grid-tile>
