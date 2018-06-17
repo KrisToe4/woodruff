@@ -1,19 +1,33 @@
-.grid-container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+.banner {
+  border-radius: 15px;
+  margin: 0;
+  width: 100%;
 }
 
-.card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.card.rounded {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 15px;
 }
 
 .card-content {
   text-align: center;
+}
+
+.mat-toolbar.rounded {
+  border-radius: 15px;
+  background-color: rgba(163, 177, 43, 1);
+  height: 50px;
+}
+
+.mat-button {
+  color: white;
+
+  font-family: Mountains of Christmas;
+  font-size: 20px; 
+
+  height: 100%;
 }
 
 .more-button {

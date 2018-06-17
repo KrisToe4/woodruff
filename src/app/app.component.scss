@@ -1,7 +1,15 @@
-.background-container {
-    background-color: #99B006;
-    background-image: url("../assets/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80% 100%;
+.content-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-card {
+    top: 50px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.mat-card {
+    padding: 15px;
 }

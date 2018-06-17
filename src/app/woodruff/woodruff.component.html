@@ -1,32 +1,38 @@
+<div class="header">
+  <mat-card class="card rounded">
+      <img mat-card-image src="../../assets/banner.jpg" alt="Banner" class="banner">
+  </mat-card>
+  <mat-card class="card rounded">
+      <mat-toolbar class="rounded">
+          <button mat-button>Home</button>
+          <button mat-button>Classes</button>
+          <button mat-button>Schedule</button>
+          <button mat-button>About Us</button>
+          <button mat-button>Outreach Projects</button>
+          <button mat-button>Gallery</button>
+          <button mat-button>Blog</button>
+      </mat-toolbar>
+  </mat-card>
+</div>
 <div class="grid-container">
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card *ngIf="card.title == 'Header'; else elseBlock" class="card">
-          <img mat-card-image src="../../assets/banner.jpg" alt="Banner" class="banner">
-      </mat-card>
-      <ng-template #elseBlock>
-        <mat-card *ngIf="card.title == 'Menu'; else cardBlock" class="card">
-            <mat-toolbar>Menu</mat-toolbar>
-        </mat-card>
-        <ng-template #cardBlock>
-          <mat-card class="card">
-              <mat-card-header>
-                <mat-card-title>
-                  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                    <mat-icon>more_vert</mat-icon>
-                  </button>
-                  <mat-menu #menu="matMenu" xPosition="before">
-                    <button mat-menu-item>Expand</button>
-                    <button mat-menu-item>Remove</button>
-                  </mat-menu>
-                </mat-card-title>
-              </mat-card-header>
-              <mat-card-content class="card-content">
-                <div>Card Content Here</div>
-              </mat-card-content>
-            </mat-card>
-        </ng-template>
-      </ng-template>
+        <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu" xPosition="before">
+                  <button mat-menu-item>Expand</button>
+                  <button mat-menu-item>Remove</button>
+                </mat-menu>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="card-content">
+              <div>Card Content Here</div>
+            </mat-card-content>
+          </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
