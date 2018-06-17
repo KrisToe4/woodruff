@@ -4,13 +4,13 @@
   </mat-card>
   <mat-card class="card">
       <mat-toolbar>
-          <button mat-button>Home</button>
-          <button mat-button>Classes</button>
-          <button mat-button>Schedule</button>
-          <button mat-button>About Us</button>
-          <button mat-button>Outreach Projects</button>
-          <button mat-button>Gallery</button>
-          <button mat-button>Blog</button>
+          <a mat-button routerLink="">Home</a>
+          <a mat-button routerLink="/classes">Classes</a>
+          <a mat-button routerLink="/schedule">Schedule</a>
+          <a mat-button routerLink="/about">About Us</a>
+          <a mat-button routerLink="/outreach">Outreach Projects</a>
+          <a mat-button routerLink="/gallery">Gallery</a>
+          <a mat-button routerLink="/blog">Blog</a>
       </mat-toolbar>
   </mat-card>
 </div>
@@ -20,6 +20,7 @@
         <mat-card class="card">
             <mat-card-content class="card-content" [style.background]="card.background">
               <div [ngSwitch]="card.title">
+                <router-outlet *ngSwitchCase="'Content'"></router-outlet> 
                 <app-bio *ngSwitchCase="'Bio'"></app-bio>
                 <app-class-list *ngSwitchCase="'ClassList'"></app-class-list>
                 <app-quote-of-the-day *ngSwitchCase="'QuoteOfTheDay'"></app-quote-of-the-day>
