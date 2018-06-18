@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  cards = [
+    { title: 'Description', cols: 1, rows: 1 },
+    { title: 'SmallImage', cols: 1, rows: 1},
+    { title: 'BigImage', cols: 2, rows: 1 },
+  ];
+
   constructor() { }
 
   ngOnInit() {
