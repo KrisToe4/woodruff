@@ -1,10 +1,16 @@
 .mat-card {
+    box-shadow: none;
     margin: 0;
-    height: 100%;
-    width: 100%;
+}
+
+.mat-card-title {
+    color: #889911;
+    font-family: Mountains of Christmas;
+    font-size: 30px;
+    text-shadow: 1px 1px #778800;
 }
 
 .mat-card-image {
-    width: fit;
+    width: fit-content;
     margin: 5px;
 }

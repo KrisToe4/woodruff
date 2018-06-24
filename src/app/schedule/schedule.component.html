@@ -1,3 +1,25 @@
-<p>
-  schedule works!
-</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Schedule</mat-card-title>
+    </mat-card-header>
+    <mat-grid-list cols="5" rowHeight="20px" gutterSize="1px">
+        <mat-grid-tile *ngFor="let headerCard of headerCards" [colspan]="headerCard.cols" [rowspan]="headerCard.rows">
+            <mat-card class="card">
+                <mat-card-content class="header-content"  [style.background]="headerCard.background">
+                    <div>{{headerCard.title}}</div>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="5" rowHeight="80px" gutterSize="1px">   
+        <mat-grid-tile *ngFor="let classCard of classCards" [colspan]="classCard.cols" [rowspan]="classCard.rows">
+            <mat-card class="card">
+                <mat-card-content class="class-content"  [style.background]="classCard.background">
+                   <div *ngIf="classCard.times != null">{{classCard.times}}</div>
+                   <div>{{classCard.title}}</div>
+                   <div *ngIf="classCard.subtitle != null">{{classCard.subtitle}}</div>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>

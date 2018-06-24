@@ -1,0 +1,36 @@
+.mat-card {
+    box-shadow: none;
+    margin: 0;
+}
+
+.mat-card-title {
+    color: #889911;
+    font-family: Mountains of Christmas;
+    font-size: 30px;
+    text-shadow: 1px 1px #778800;
+}
+
+.mat-expansion-panel-header {
+    font-weight: 700;
+}
+
+.mat-card-image {
+    margin: 5px;
+}
+
+.class-image {
+    width: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+.divider-image {
+    width: initial;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    font-style: italic;
+}

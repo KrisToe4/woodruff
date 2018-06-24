@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WoodruffComponent } from './woodruff/woodruff.component';
-import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatListModule } from '@angular/material';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule, MatToolbarModule, MatListModule, MatExpansionModule } from '@angular/material';
 import { BioComponent } from './bio/bio.component';
 import { ClassListComponent } from './class-list/class-list.component';
 import { QuoteOfTheDayComponent } from './quote-of-the-day/quote-of-the-day.component';
@@ -44,7 +44,8 @@ import { BlogComponent } from './blog/blog.component';
     MatIconModule,
     MatListModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
