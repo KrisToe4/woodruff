@@ -15,7 +15,7 @@
   </mat-card>
 </div>
 <div class="grid-container">
-  <mat-grid-list cols="4" rowHeight="400px" gutterSize="0">
+  <mat-grid-list cols="4" rowHeight="100px" gutterSize="0">
     <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="card" [ngSwitch]="card.title">
         <mat-card-content class="card-content" [style.background]="card.background">

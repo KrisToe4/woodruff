@@ -1,12 +1,14 @@
 .mat-card {
     width: 100%;
     height: 100%;
-    box-shadow: none;
+}
+
+.tile-card {
     padding: 0;
 }
 
-.mat-grid-list {
-    background: black;
+.mat-card-content {
+    height: 100%;
 }
 
 .mat-card-title {
@@ -16,10 +18,62 @@
     text-shadow: 1px 1px #778800;
 }
 
-
 .mat-card-content div {
-    font-size: 11px;
-    height: 20px;
-    margin-top: 5px;
     text-align: center;
+}
+
+.tile-card a {
+    height: 100%; width: 100%;
+}
+
+.header-content {
+    border: solid black 1px;
+}
+.header-content div {
+    color: rgb(153, 165, 41);
+    text-shadow: 1px 0 rgb(222, 240, 61);
+
+    font-family: Mountains of Christmas;
+    font-size: 18px;
+    font-weight: 600;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.class-content {
+    border: solid black 1px;
+}
+
+.class-content div {
+    color: rgb(153, 165, 41);
+    text-shadow: 1px 0 rgb(222, 240, 61);
+    line-height: 1.5;
+}
+
+.class-content .class-time {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.class-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.class-content .class-title {
+    font-family: Mountains of Christmas;
+    font-size: 14px;
+    font-weight: 900;
+
+}
+
+.class-content .class-subtitle {
+    font-size: 9px;
+
 }

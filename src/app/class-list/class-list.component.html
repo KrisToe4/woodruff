@@ -4,14 +4,14 @@
     </mat-card-header>
     <mat-card-content>
         <mat-nav-list dense>
-            <a mat-list-item href="">Musical Beginnings</a>
-            <a mat-list-item href="">Growing with Music</a>
-            <a mat-list-item href="">Marimba One * Explore</a>
-            <a mat-list-item href="">Marimba Two * Adventure</a>
-            <a mat-list-item href="">Marimba Three * Intermediate</a>
-            <a mat-list-item href="">Marimba Four * Advanced</a>
-            <a mat-list-item href="">Family Marimba</a>
-            <a mat-list-item href="">arimba Mammas (and Pappas)</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'beginnings'}]">Musical Beginnings</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'growing'}]">Growing with Music</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'marimba1'}]">Marimba One * Explore</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'marimba2'}]">Marimba Two * Adventure</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'marimba3'}]">Marimba Three * Intermediate</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'marimba4'}]">Marimba Four * Advanced</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'family'}]">Family Marimba</a>
+            <a mat-list-item class="class-link" [routerLink]="['classes', {name: 'parents'}]">Marimba Mammas (and Pappas)</a>
         </mat-nav-list>
     </mat-card-content>
 </mat-card>

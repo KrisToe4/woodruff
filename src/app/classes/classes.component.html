@@ -2,8 +2,8 @@
     <mat-card-header>
         <mat-card-title>Classes</mat-card-title>
     </mat-card-header>
-    <mat-accordion displayMode="default" [multi]="true" [hideToggle]="true">
-        <mat-expansion-panel [hideToggle]="false">
+    <mat-accordion displayMode="default" [multi]="false" [hideToggle]="true">
+        <mat-expansion-panel [hideToggle]="false" #beginningsPanel [expanded]="requestedClass === 'beginnings'" (opened)="ClassOpened(beginningsPanel);">
             <mat-expansion-panel-header>Musical Beginnings - Toddlers</mat-expansion-panel-header>
             <div>(10 wk. sessions)</div>
             <img class="class-image" mat-card-image src="../../assets/musical_beginnings.jpg" alt="Musical Beginnings">
@@ -16,7 +16,7 @@
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #growingPanel [expanded]="requestedClass === 'growing'" (opened)="ClassOpened(growingPanel);">
             <mat-expansion-panel-header>Growing With Music - Preschoolers</mat-expansion-panel-header>
             <div>(32 weeks) September to May</div>
             <img class="class-image" mat-card-image src="../../assets/growing_with_music.jpg" alt="Growing with Music">
@@ -29,7 +29,7 @@
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #marimba1Panel [expanded]="requestedClass === 'marimba1'" (opened)="ClassOpened(marimba1Panel);">
             <mat-expansion-panel-header>Marimba One * Explore - 5 & 6 years</mat-expansion-panel-header>
             <div>(32 weeks) September to May</div>
             <img class="class-image" mat-card-image src="../../assets/marimba_one.jpg" alt="Marimba One">
@@ -42,7 +42,7 @@
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #marimba2Panel [expanded]="requestedClass === 'marimba2'" (opened)="ClassOpened(marimba2Panel);">
             <mat-expansion-panel-header>Marimba Two * Adventure - 7 - 9 years</mat-expansion-panel-header>
             <div>(32 weeks) September to May</div>
             <img class="class-image" mat-card-image src="../../assets/marimba_two.jpg" alt="Marimba 2">
@@ -55,21 +55,21 @@
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
 
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #marimba3Panel [expanded]="requestedClass === 'marimba3'" (opened)="ClassOpened(marimba3Panel);">
             <mat-expansion-panel-header>Marimba Three * Intermediate</mat-expansion-panel-header>
             <div>
                 As the students continue on in the marimba program, music theory is made relevant through the activities and pieces they play on their instruments. They work as a team, developing strong collaborative skills as they go through the process of creating & arranging simple original compositions, as well as refining more intricate pieces. They learn how to hear more than just their part in the ensemble, and how the many layers of sound complement each other to create a unified interesting sounding whole. Their sense of timing is refined through the repetition of patterns which rely on a strong pulse. Some performing opportunities occur during the year.
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #marimba4Panel [expanded]="requestedClass === 'marimba4'" (opened)="ClassOpened(marimba4Panel);">
             <mat-expansion-panel-header>Marimba Four * Advanced</mat-expansion-panel-header>
             <div>
                 Returning experienced students continue on with additional opportunities to be part of the process in choosing, arranging, composing, and performing more advanced marimba pieces. At this level, student groups are often invited to perform for community functions, and fundraising events.
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #familePanel [expanded]="requestedClass === 'family'" (opened)="ClassOpened(famileanel);">
             <mat-expansion-panel-header>Family Marimba (flexible groupings) </mat-expansion-panel-header>
             <img class="class-image" mat-card-image src="../../assets/marimba_family.jpg" alt="Marimba Families">
             <div>
@@ -82,7 +82,7 @@
             </div>
             <img class="divider-image" mat-card-image src="../../assets/sunshine.png" alt="Sun Symbol">
         </mat-expansion-panel>
-        <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel [hideToggle]="false" #parentsPanel [expanded]="requestedClass === 'parents'" (opened)="ClassOpened(parentsPanel);">
             <mat-expansion-panel-header>Marimba Mammas and Pappas</mat-expansion-panel-header>
             <img class="class-image" mat-card-image src="../../assets/marimba_papa.JPG" alt="Marimba Papa">
             <div>
