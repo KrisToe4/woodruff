@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
     "to strive for beauty and pleasure in the PROCESS as well as the product",
     "to develop sensitivity to the natural world around us through active listening and observing",
     "to expose families to a wide variety of musical experiences & instruments and to develop an interest to explore and discover more about music",
-    "to provide many varied opportunities to sing, move, listen, explore, play &amp; create, thereby encouraging a range of avenues for self-expression"
+    "to provide many varied opportunities to sing, move, listen, explore, play and create, thereby encouraging a range of avenues for self-expression"
   ];
 
   constructor() { }
