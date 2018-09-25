@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
 
 * {
     box-sizing: border-box;
@@ -13,4 +20,8 @@ body {
     background-image: url("./assets/bg_wide.jpg");
     background-position-x: center;
     background-repeat: no-repeat;
+}
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+    transform: none !important;
 }

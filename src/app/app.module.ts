@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { OutreachComponent } from './outreach/outreach.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { BlogComponent } from './blog/blog.component';
     MatListModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
