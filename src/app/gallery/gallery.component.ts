@@ -129,6 +129,61 @@ export class GalleryComponent implements OnInit {
             small: '../../assets/gallery/18.jpeg',
             medium: '../../assets/gallery/18.jpeg',
             big: '../../assets/gallery/18.jpeg'
+        },
+        {
+            small: '../../assets/gallery/19.jpeg',
+            medium: '../../assets/gallery/19.jpeg',
+            big: '../../assets/gallery/19.jpeg'
+        },
+        {
+            small: '../../assets/gallery/20.jpeg',
+            medium: '../../assets/gallery/20.jpeg',
+            big: '../../assets/gallery/20.jpeg'
+        },
+        {
+            small: '../../assets/gallery/21.jpeg',
+            medium: '../../assets/gallery/21.jpeg',
+            big: '../../assets/gallery/21.jpeg'
+        },
+        {
+            small: '../../assets/gallery/22.jpeg',
+            medium: '../../assets/gallery/22.jpeg',
+            big: '../../assets/gallery/22.jpeg'
+        },
+        {
+            small: '../../assets/gallery/23.jpeg',
+            medium: '../../assets/gallery/23.jpeg',
+            big: '../../assets/gallery/23.jpeg'
+        },
+        {
+            small: '../../assets/gallery/24.jpeg',
+            medium: '../../assets/gallery/24.jpeg',
+            big: '../../assets/gallery/24.jpeg'
+        },
+        {
+            small: '../../assets/gallery/25.jpeg',
+            medium: '../../assets/gallery/25.jpeg',
+            big: '../../assets/gallery/25.jpeg'
+        },
+        {
+            small: '../../assets/gallery/26.jpeg',
+            medium: '../../assets/gallery/26.jpeg',
+            big: '../../assets/gallery/26.jpeg'
+        },
+        {
+            small: '../../assets/gallery/27.jpeg',
+            medium: '../../assets/gallery/27.jpeg',
+            big: '../../assets/gallery/27.jpeg'
+        },
+        {
+            small: '../../assets/gallery/28.jpeg',
+            medium: '../../assets/gallery/28.jpeg',
+            big: '../../assets/gallery/28.jpeg'
+        },
+        {
+            small: '../../assets/gallery/29.jpeg',
+            medium: '../../assets/gallery/29.jpeg',
+            big: '../../assets/gallery/29.jpeg'
         }
     ];
   }

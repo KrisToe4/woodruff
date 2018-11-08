@@ -16,7 +16,6 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { AboutComponent } from './about/about.component';
 import { OutreachComponent } from './outreach/outreach.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { BlogComponent } from './blog/blog.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
@@ -32,8 +31,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
     ScheduleComponent,
     AboutComponent,
     OutreachComponent,
-    GalleryComponent,
-    BlogComponent
+    GalleryComponent
   ],
   imports: [
     AppRoutingModule,

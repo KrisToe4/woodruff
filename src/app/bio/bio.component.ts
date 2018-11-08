@@ -12,4 +12,7 @@ export class BioComponent implements OnInit {
   ngOnInit() {
   }
 
+  loadFacebook() {
+    window.open("https://www.facebook.com/woodruffmusicstudio/", "_blank");
+  }
 }
