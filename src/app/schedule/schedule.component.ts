@@ -29,13 +29,13 @@ export class ScheduleComponent implements OnInit {
     { title: 'Musical Beginnings', times: "10am - 11am", link: "beginnings", cols: 1, rows: 1, background: this.activeColor },
     { title: 'Growing6', times: "12:30pm - 1:30pm", link: "growing", cols: 1, rows: 1, background: this.activeColor },
     // AFternoon/Evening Classes
-    { title: 'Private Student', times: "3:15pm - 4:15pm", cols: 1, rows: 1, background: this.activeColor },
-    { title: 'Explore', times: "3:15pm - 4:15pm", link: "marimba1", cols: 1, rows: 1, background: this.activeColor },
-    { title: 'Rough Woods', times: "3:30pm - 4:30pm", link: "marimba3", cols: 1, rows: 1, background: this.activeColor },
+    { title: 'Marimba 2', times: "3:15pm - 4:15pm", link: "marimba2", cols: 1, rows: 1, background: this.activeColor },
+    { title: 'Marimba 1', times: "3:15pm - 4:15pm", link: "marimba1", cols: 1, rows: 1, background: this.activeColor },
+    { title: 'Advanced Marimba', times: "3:30pm - 4:45pm", link: "marimba4", cols: 1, rows: 1, background: this.activeColor },
     { title: '', cols: 1, rows: 2, background: this.activeColor },
-    { title: 'Adventure', times: "4:15pm - 5:15pm", link: "marimba1", cols: 1, rows: 1, background: this.activeColor },
-    { title: 'Marimba 2', times: "4:30pm - 5:30pm", link: "marimba2", cols: 1, rows: 1, background: this.activeColor },
-    { title: 'Swinging Mallets', times: "4:35pm-5:35pm", link: "marimba3", cols: 1, rows: 1, background: this.activeColor },
+    { title: 'Marimba 3', times: "4:15pm - 5:15pm", link: "marimba3", cols: 1, rows: 1, background: this.activeColor },
+    { title: 'Advanced Marimba', times: "3:30pm - 4:45pm", link: "marimba4", cols: 1, rows: 1, background: this.activeColor },
+    { title: '', cols: 1, rows: 1, background: this.activeColor },
   ];
 
   constructor() { }
