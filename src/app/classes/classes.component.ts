@@ -9,7 +9,7 @@ import { MatExpansionPanel } from '@angular/material';
 })
 export class ClassesComponent implements OnInit {
 
-  private requestedClass: string;
+  public requestedClass: string;
   private openedPanel: MatExpansionPanel;
 
   constructor(private activatedRoute: ActivatedRoute) { }
